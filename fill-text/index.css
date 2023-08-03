@@ -1,0 +1,26 @@
+body{
+    background: #000;
+    display: grid;
+    height: 100vh;
+    min-height: 100dvh;
+    place-items: center;
+}
+
+.fill-text {
+    color: #f09;
+    font-size: 10vw;
+    font-weight: bold;
+    background-image: linear-gradient(#12c2e9, #c471ed, #f64f59), linear-gradient(white,white,white);
+    background-clip: text;
+    color: transparent;
+    background-size: 0% 100% 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    animation: fill 5s linear infinite;
+    -webkit-background-clip: text;
+}
+
+@keyframes fill {
+    to {
+        background-size: 100% 100% 100% 100%;
+    }
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to left, #CED4F2, #F0D7F4);
+    text-align: center;
+    color: #35446D;
+    font-size: 30px;
+}
+
+.share {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -40px;
+    border-radius: 80px;
+}
+
+.share span {
+    width: 200px;
+    line-height: 80px;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.share nav {
+    font-size: 0;
+}
+
+.share a {
+    line-height: 80px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: #FDF5FF;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -20px;
+    box-shadow: 3px 1px 3px 2px rgba(0, 0, 0, 0.05);
+}
+
+.share a:nth-child(1) {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 0;
+}
+
+.share a:nth-child(1):hover {
+    background-color: #4e79c4;
+}
+
+.share a:nth-child(2):hover {
+    background-color: #6ddafc;
+}
+
+.share a:nth-child(3):hover {
+    background-color: #0e9cdb;
+}
+
+.share a:nth-child(4) {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-right: 0;
+}
+
+.share a:nth-child(4):hover {
+    background-color: #f75c54;
+}
+
+.share:hover span, .share.hover span {
+    letter-spacing: 5px;
+    opacity: 0;
+}
+
+.share:hover a, .share.hover a {
+    border-radius: 40px;
+    margin: 0 10px;
+    color: #35446D;
+    font-size: 25px;
+}
+
+.share:hover a:hover, .share.hover a:hover {
+    color: #fff;
+}

@@ -1,0 +1,32 @@
+body {
+    background: #000;
+}
+.container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 420px;
+    justify-content: center;
+}
+
+.container .box {
+    position: relative;
+    height: 160px;
+    width: 160px;
+    border-radius: 12px;
+    border: 2px solid #333;
+}
+
+.box .image {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./img/pexels-pixabay-459301.jpg');
+}
+
+.box.hovered {
+    border: 2px solid #333;
+}
